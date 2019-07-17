@@ -13,4 +13,6 @@ canvas.height = canHeight;
 function BounceBall() {
    this.radius = Math.random() * 10 + 10;
    this.x = Math.random() * (canWidth - this.radius * 2) + this.radius;
+   this.y = Math.random() * (canHeight - this.radius * 2) + this.radius;
+
 }
