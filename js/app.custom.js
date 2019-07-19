@@ -9,6 +9,12 @@ var canHeight = window.innerHeight;
 canvas.width = canWidth;
 canvas.height = canHeight;
 
+// an event handler for knowing when the mouse location
+addEventListener("mousepos", function() {
+   mHeight = event.clientX;
+   mWidth = event.clientY;
+});
+
 // since this is some sort of dynamic object, I think I'll make it a function
 function BounceBall() {
    this.radius = Math.random() * 10 + 10;
