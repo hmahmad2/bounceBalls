@@ -1,8 +1,8 @@
 var canvas = document.getElementById("sandbox");
 var c = canvas.getContext("2d");
 
-c.beginPath();
-c.lineWidth = "5";
+c.beginPath(); // begins a path, or restarts the current path
+c.lineWidth = "5"; // width of line
 c.strokeStyle = "green"; // line is green
 // following coordinates are (x, y) starting from the top-left of the canvas
 c.moveTo(0, 75); // start coordinates (px)
