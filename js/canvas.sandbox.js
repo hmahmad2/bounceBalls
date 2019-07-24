@@ -30,8 +30,22 @@ c.stroke();
 
 // CIRCLE
 c.beginPath();
-c.arc(45, 45, 50, 0, 2*Math.PI);
+c.arc(100, 100, 50, 0, 2*Math.PI);
 c.fillStyle = "pink"; // The color that fills the circle (if using fill())
 c.strokeStyle = "orange";
 c.fill(); // Fills the circle entirely
 c.stroke(); // draws the perimeter of the circle
+
+// RECTANGLE AND SHADOWS
+c.beginPath();
+// c.moveTo(130,200);
+c.shadowBlur = "80";
+c.shadowColor = "black";
+c.fillStyle = "green";
+c.strokeStyle = "violet";
+c.rect(200, 160, 150, 97);
+c.fillRect(190,190,200,200); // (x, y, width, height)
+// c.fill();
+c.stroke();
+// you don't need stroke() or fill() for fillRect()
+// looks like rectangles don't take borders naturally.
