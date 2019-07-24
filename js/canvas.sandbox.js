@@ -31,5 +31,7 @@ c.stroke();
 // CIRCLE
 c.beginPath();
 c.arc(45, 45, 50, 0, 2*Math.PI);
-// c.fill(); // Fills the circle entirely
+c.fillStyle = "pink"; // The color that fills the circle (if using fill())
+c.strokeStyle = "orange";
+c.fill(); // Fills the circle entirely
 c.stroke(); // draws the perimeter of the circle
