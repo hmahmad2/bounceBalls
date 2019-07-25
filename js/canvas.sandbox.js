@@ -31,7 +31,7 @@ c.stroke();
 // CIRCLE
 c.beginPath();
 c.arc(100, 100, 50, 0, 2*Math.PI);
-c.fillStyle = "pink"; // The color that fills the circle (if using fill())
+c.fillStyle = randomColor(); // The color that fills the circle (if using fill())
 c.strokeStyle = "orange";
 c.fill(); // Fills the circle entirely
 c.stroke(); // draws the perimeter of the circle
@@ -48,4 +48,13 @@ c.fillRect(190,190,200,200); // (x, y, width, height)
 // c.fill();
 c.stroke();
 // you don't need stroke() or fill() for fillRect()
-// looks like rectangles don't take borders naturally.
+
+function randomColor() {
+   return (
+      "rgb(" +
+      Math.round(Math.random() * 250) + "," +
+      Math.round(Math.random() * 250) + "," +
+      Math.round(Math.random() * 250)
+      + ")"
+   );
+}
