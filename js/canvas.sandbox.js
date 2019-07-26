@@ -43,7 +43,7 @@ c.shadowBlur = "80";
 c.shadowColor = "black";
 c.fillStyle = "green";
 c.strokeStyle = "violet";
-c.rect(200, 160, 150, 97);
+c.rect(200, 160, 150, 97); // Outline of a rectangle
 c.fillRect(190,190,200,200); // (x, y, width, height)
 // c.fill();
 c.stroke();
@@ -58,3 +58,13 @@ function randomColor() {
       + ")"
    );
 }
+
+// ARCTO
+c.beginPath();
+c.strokeStyle = randomColor();
+c.moveTo(200,200);
+c.lineTo(280,200);
+// creates an acr/curve between two tangents on the canvas
+c.arcTo(330,200,330,250,60); // (x1,y1,x2,y2,radius)
+c.lineTo(330,320);
+c.stroke();
